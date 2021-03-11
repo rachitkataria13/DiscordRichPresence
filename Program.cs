@@ -13,8 +13,7 @@ namespace Discord_Rich_Presence
         static void Main()
         {
             const string appName = "Discord Rich Presence";
-            bool createdNew;
-            new Mutex(true, appName, out createdNew);
+            new Mutex(true, appName, out bool createdNew);
 
             if (!createdNew)
             {
